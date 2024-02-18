@@ -4,7 +4,7 @@
 use crate::{ShellCore, Feeder};
 use crate::elements::subword::Subword;
 
-#[derive(Debug, Clone, PartialEq)]
+#[derive(Debug, Clone)]
 enum SubwordType {
     /* parameters and variables */
     ParamSpecialPositional,
