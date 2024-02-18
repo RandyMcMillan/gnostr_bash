@@ -54,7 +54,6 @@ impl Subword for SimpleSubword {
     }
 
     fn is_name(&self) -> bool { self.subword_type == SubwordType::VarName }
-    fn clear(&mut self) { self.text = String::new(); }
 }
 
 impl SimpleSubword {

@@ -27,7 +27,6 @@ pub trait Subword {
     fn parameter_expansion(&mut self, core: &mut ShellCore);
     fn unquote(&mut self);
     fn is_name(&self) -> bool { false }
-    fn clear(&mut self);
 }
 
 pub fn parse(feeder: &mut Feeder, core: &mut ShellCore) -> Option<Box<dyn Subword>> {
