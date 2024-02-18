@@ -36,12 +36,6 @@ impl Subword for SimpleSubword {
                 let value = core.get_param_ref(&self.text[1..]);
                 self.text = value.to_string();
             },
-            SubwordType::Symbol => {
-                if self.text.len() > 1 && self.text.starts_with("$") {
-                    let value = core.get_param_ref(&self.text[1..]);
-                    self.text = value.to_string();
-                }
-            },
             _ => {},
         }
     }
