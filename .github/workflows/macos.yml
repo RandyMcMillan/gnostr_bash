@@ -3,7 +3,7 @@ name: macos-latest
 on:
   push:
     branches: [ m**, sd/* ]
-    paths: ['src/**', 'test/**', '!README.md' ]
+    paths: ['src/**', 'test/**', '.github/**','!README.md' ]
   pull_request:
     branches: [ m** ]
 
