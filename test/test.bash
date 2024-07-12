@@ -10,7 +10,7 @@ err () {
 cargo build || err $LINENO
 
 cd $(dirname $0)
-com=../target/debug/sush
+com=../target/debug/gnostr_bash
 
 ### SIMPLE COMMAND TEST ###
 
